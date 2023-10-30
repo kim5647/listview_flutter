@@ -15,7 +15,7 @@ class ColoredContainer extends StatelessWidget {
     required this.color,
     this.width = 100,
     this.height = 50,
-    this.borderRadius = 15.0, // Значение по умолчанию: без закругления
+    this.borderRadius = 15.0,
     required this.text,
   });
 
@@ -27,7 +27,7 @@ class ColoredContainer extends StatelessWidget {
       
       decoration: BoxDecoration(
         color: color,
-        borderRadius: BorderRadius.circular(borderRadius), // Добавляем закругление
+        borderRadius: BorderRadius.circular(borderRadius),
       ),
       width: width,
       height: height,
@@ -35,8 +35,8 @@ class ColoredContainer extends StatelessWidget {
             child: Text(
         text,
         style: const TextStyle(
-          color: Colors.white, // Цвет текста
-          fontWeight: FontWeight.bold, // Жирный шрифт
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
           
         ),
         
@@ -61,7 +61,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Column(
           children: [
-            // Вертикальный ListView
+
             SizedBox(
               height: 100,
               child: ListView(
@@ -71,7 +71,7 @@ class MyApp extends StatelessWidget {
                 }).toList(),
               ),
             ),
-            // Горизонтальный ListView
+
             SizedBox(
               height: 300,
               child: ListView(
